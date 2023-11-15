@@ -3,7 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{3E4B5BBA-88C4-4AF1-8B97-80DACCF5977F}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EC13E39B-2056-4469-AB14-DB471880A329}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\infrastructure\Infrastructure.csproj", "{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +24,17 @@ Global
 		{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1004F0C-166B-4FA8-8FD0-B5003EC0BD39} = {EC13E39B-2056-4469-AB14-DB471880A329}
+		{4AA39653-EEF4-4F8E-8F93-E1A0AB5FD9C1} = {3E4B5BBA-88C4-4AF1-8B97-80DACCF5977F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E6FB305-6984-4FCC-B594-781DD4277243}
