@@ -20,11 +20,5 @@ namespace Api.Controllers
 
             return Ok(DateTime.Now);
         }
-
-        [HttpGet]
-        public IActionResult GetProduct(Guid id)
-        {
-            return NotFound();
-        }
     }
 }
