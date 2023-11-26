@@ -2,19 +2,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
+
     [ApiController]
     [Route(Constants.DefaultRoute)]
-    public class ProductController : ControllerBase
+    public class CustodianController : ControllerBase
     {
-        private readonly ILogger<ProductController> _logger;
+        private readonly ILogger<CustodianController> _logger;
 
-        public ProductController(ILogger<ProductController> logger)
+        public CustodianController(ILogger<CustodianController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        public IActionResult GetAllProducts()
+        public IActionResult GetAllCustodians()
         {
             _logger.LogInformation("Received a ping request");
 

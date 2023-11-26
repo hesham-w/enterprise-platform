@@ -1,4 +1,5 @@
-﻿using Pulumi;
+﻿using Infrastructure;
+using Pulumi;
 using Pulumi.AzureNative.Resources;
 using Pulumi.AzureNative.Storage;
 using Pulumi.AzureNative.Storage.Inputs;
@@ -8,6 +9,8 @@ return await Pulumi.Deployment.RunAsync(() =>
 {
     // Create an Azure Resource Group
     var resourceGroup = new ResourceGroup("platformrg");
+
+    CosmosDb.Create(resourceGroup);
 
     // Create an Azure resource (Storage Account)
     var storageAccount = new StorageAccount("platformsa", new StorageAccountArgs
