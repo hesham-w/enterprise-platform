@@ -9,3 +9,5 @@ install pulumi
 install azure cli
 
 az login
+
+https://miro.com/app/board/uXjVNKRbs0Q=/
